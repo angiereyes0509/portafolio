@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicios con ventanas modales</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body background="imagenes/figuras.png">
+
+
+
+<div class="container-fluid">
+
+<h1 class="titulo">figuras geometricas</h1>
+<div class="row">
+
+<!--inicio del card del circulo-->
+<div class="card text-dark bg-light mb-3 col md " style="max-width: 18rem;">
+  <div class="card-header">circulo</div>
+  <div class="card-body">
+    <h5 class="card-title">area del circulo</h5>
+    <img src="imagenes/circulo.png">
+    <p class="card-text">el area es:</p>
+    <button type="button" class="btn btn-secondary" data-bs-target="#circulo" data-bs-toggle="modal">calcular area</button>
+  </div>
+</div>
+ <!--fin del modal del circulo-->
+
+
+<div class="card text-white bg-dark mb-3 col md " style="max-width: 18rem;">
+  <div class="card-header">cuadrado</div>
+  <div class="card-body">
+    <h5 class="card-title">area del cuadrado</h5>
+    <img src="imagenes/hielo2.png">
+    <p class="card-text">el area es:</p>
+    <button type="button" class="btn btn-secondary" data-bs-target="#cuadrado" data-bs-toggle="modal">calcular area</button>
+  </div>
+  </div>
+
+
+  <div class="card text-dark bg-light mb-3 col md " style="max-width: 18rem;">
+  <div class="card-header">triangulo</div>
+  <div class="card-body">
+    <h5 class="card-title">area del triangulo </h5>
+    <img src="imagenes/triangulo.png" width="200">
+    <p class="card-text">el area es:</p>
+    <button type="button" class="btn btn-secondary" data-bs-target="#triangulo" data-bs-toggle="modal">calcular area</button>
+  </div>
+</div>
+
+<div class="card text-white bg-dark mb-3 col md " style="max-width: 18rem;">
+  <div class="card-header">rectangulo</div>
+  <div class="card-body">
+    <h5 class="card-title">area del rectangulo</h5>
+    <img src="imagenes/rectangulo.png" width="250">
+    <p class="card-text">el area es:</p>
+    <button type="button" class="btn btn-secondary" data-bs-target="#rectangulo" data-bs-toggle="modal">calcular area</button>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!--inicio del modal del circulo-->
+
+<div class="modal" tabindex="-1" id="circulo">
+  <div class="modal-dialog modal-dialog centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">area del circulo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+      	<label for="radio" class="form-label">ingrese el valor del radio en cm</label>
+      	<input type="number" name="radio" class="form control" id="radio"> 
+      	<p class="text-center mt-2" id="resultado">el resultado es </p>
+      	
+      </div>
+
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+      	<button type="button" class="btn btn-primary" onclick="calcularAreaCi()">calcular</button>
+      </div>
+  </div>
+</div>
+</div>
+<!--fin del modal del circulo-->
+
+<!--inicio del modal del cuadrado-->
+
+<div class="modal" tabindex="-1" id="cuadrado">
+  <div class="modal-dialog modal-dialog centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">area del cuadrado</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+      	<label for="radio" class="form-label">ingrese el valor del lado en cm</label>
+      	<input type="number" name="radio" class="form control" id="lado"> 
+      	<p class="text-center mt-2" id="resultado1">el resultado es </p>
+      	
+      </div>
+
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+      	<button type="button" class="btn btn-primary" onclick="calcular()">calcular</button>
+      </div>
+  </div>
+ </div>
+</div>
+<!--fin del modal del cuadrado-->
+
+
+
+<!--inicio del modal del triangulo-->
+
+<div class="modal" tabindex="-1" id="triangulo">
+  <div class="modal-dialog modal-dialog centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">area del triangulo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+      	<label for="radio" class="form-label">ingrese el valor del lado en cm</label>
+      	<input type="number" name="radio" class="form control" id="base"> 
+      	<p class="text-center mt-2" id="resultado2">el resultado es </p>
+      	
+      </div>
+
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+      	<button type="button" class="btn btn-primary" onclick="areaTriangulo()">calcular</button>
+      </div>
+  </div>
+ </div>
+</div>
+<!--fin del modal del triangulo-->
+
+<!--inicio del modal del rectangulo-->
+
+<div class="modal" tabindex="-1" id="rectangulo">
+  <div class="modal-dialog modal-dialog centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">area del rectangulo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+      	<label for="radio" class="form-label">ingrese el valor del lado en cm</label>
+      	<input type="number" name="radio" class="form control" id="base1"> 
+      	<p class="text-center mt-2" id="resultado3">el resultado es </p>
+      	
+      </div>
+
+      <div class="modal-footer">
+      	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+      	<button type="button" class="btn btn-primary" onclick="areaRectangulo()">calcular</button>
+      </div>
+  </div>
+ </div>
+</div>
+<!--fin del modal del rectangulo-->
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/ventana.js"></script>
+</body>
+</html>
