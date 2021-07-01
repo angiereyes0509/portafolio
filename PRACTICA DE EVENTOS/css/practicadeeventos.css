@@ -1,0 +1,146 @@
+@font-face{
+	font-family: "cosmith-chic";
+	src: url("../fonts/cosmith-chic.tff")format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2? family = Itim & display = swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url('../imagenes/aurora.png');
+	background-size: cover;
+	font-family: "cosmith-chic";
+
+}
+
+
+h1,h2,h3{
+	font-family: 'Itim', cursiva;
+	text-align: center;
+	color: #C9B6F0;
+}
+
+.fila{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+
+.caja{
+	background-color: rgb(0,0,0,0.5);opacida
+	max-width: 100rem;
+	width: 30%;
+	min-height: 30rem;
+	max-height: 30rem;
+	height: 30%;
+	margin: 30px 0;
+	color: #A7F1B9;
+	text-align: center;
+	padding: 30px;
+
+}
+
+select{
+	background-color: #C9B6F0;
+	min-height: 2.2rem;
+	height: 100%;
+	border-radius: 5px;
+	margin: 20px;
+	box-shadow: 3px 3px 3px #000000;
+
+}
+
+#correcto{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	color: #000000;
+	line-height: 55px;
+	padding: 20px;
+	max-width: 100%;
+	width: 100%;
+	max-height: 5rem;
+	min-height: 5rem;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#correcto img{
+	width: 30px;
+
+}
+
+#acertijo{
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	color: #000000;
+	line-height: 55px;
+	padding: 20px;
+	max-width: 100%;
+	width: 100%;
+	max-height: 5rem;
+	min-height: 5rem;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#acertijo img{
+	width: 30px;
+
+}
+
+.prueba {
+	visibility: visible;
+	opacity: 1;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	color: #000000;
+	line-height: 55px;
+	max-width: 100%;
+	width: 100%;
+	max-height: 5rem;
+	min-height: 5rem;
+	height: 100%;
+	
+}
+
+.boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #FFFFFF;
+    background-color: #CDA7F1;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+ .respuesta{
+ visibility: visible;
+	opacity: 1;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	color: #000000;
+	line-height: 55px;
+	max-width: 100%;
+	width: 100%;
+	max-height: 5rem;
+	min-height: 5rem;
+	height: 100%;
+	
+ }
+  

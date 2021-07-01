@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="es-ES">
+	<meta charset="utf-8">
+	<title>practica de eventos</title>
+	<link rel="stylesheet" type="text/css" href="css/practicadeeventos.css">
+</head>
+<body>
+
+<main>
+	
+	<div class="fila">
+
+		<div class="caja">
+			<h1>¿como se llama la profe?</h1>
+			<br>
+			<p>seleccione corectamente el nombre y apellido de una profesora</p>
+
+
+			<form>
+				<select id="nombre">
+					<option value="0">seleccione</option>
+					<option value="1">jennifer</option>
+					<option value="2">tatiana</option>
+					<option value="3">juliana</option>
+				</select> 
+
+				<select id="apellido">
+					<option value="0">seleccione</option> 
+					<option value="1">cabrera</option>
+					<option value="2">correal</option>
+					<option value="3">fajardo</option>
+				</select>
+             <div>
+            <input type="image" src="imagenes/p.png" id="boton"></div>
+
+			</form>
+			<div id="correcto">
+				
+			</div>
+			
+		</div>
+
+		<div class="caja">
+			<h1>Acertijo matematico</h1>
+			<br>
+			<p>cuatro gatos en un cuarto, cada gato en un rincon ve tres gatos, cuantos gatos son.</p>
+			<br>
+			<h3>selecciona tu respuesta</h3>
+			<br>
+			<div>
+            <input type="image" src="imagenes/tres.png" id="num3">
+            <input type="image" src="imagenes/cuatro.png" id="num4">
+            <input type="image" src="imagenes/cinco.png" id="num5">
+            </div>
+            <div id="acertijo">
+		
+	        </div>
+			
+	    </div>
+	</div>
+	
+
+<div class="fila">
+		<div class="caja">
+			<h1>completa el refran</h1>
+			<br>
+			<p>"camaron que se duerme se lo lleva la"</p>          
+          <input type="radio" id="palabra" name="palabra" value="1">
+         corriente
+          <input type="radio" id="palabra" name="palabra" value="2">
+          marea
+          <input type="radio" id="palabra" name="palabra" value="3">
+          ola
+          <div>
+          	<br>
+            <input type="image" src="imagenes/p.png" id="refran"></div>
+           <div id="respuesta">
+	        </div>
+		</div>
+
+
+		<div class="caja">
+			<h1>Adivina</h1>
+			<br>
+			<p>¿Qué pesa más, un kilo de hierro o un kilo de paja?</p> 
+			<br>
+		   <div>
+           <a href="" id="pista" class="boton_1">pista</a>
+           <a href="" id="solucion" class="boton_1">solucion</a>
+           </div>
+           <br>
+            <div class="repta1">
+	        </div>
+			
+	    </div>
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/practicadeeventos.js"></script>
+</body>
+</html>
