@@ -1,0 +1,114 @@
+@import url ('https://fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap');
+
+
+.btn{
+	background-color: pink;
+	opacity: 80%;
+}
+
+
+.t{
+	text-align: center;
+	color: pink;
+	padding-right: 20%;
+	padding: 20px;
+	font-style:'Roboto'sans-serif;
+	
+}
+
+
+.llamada{
+	padding-left: 10%;
+	color: purple;
+
+}
+
+
+.t2{
+	text-align: center;
+	color: pink;
+	padding-left: 10%;
+	margin: auto;
+	font-style:'Roboto'sans-serif;
+}
+
+
+
+
+
+.t3{
+	text-align: center;
+	color: pink;
+	margin: auto;
+	font-style:'Roboto'sans-serif;
+
+}
+.t4{
+	text-align: center;
+	color: pink;
+	margin: auto;
+	font-style:'Roboto'sans-serif;
+
+}
+
+.t5{
+	text-align: center;
+	color: pink;
+	margin: auto;
+	font-style:'Roboto'sans-serif;
+}
+
+.d-grid{
+	text-align: center
+}
+
+.container-fluid{
+color: rgb(7, 122, 244 );
+
+}
+
+.img-fluid{
+	padding: 25px;
+	border-color: purple;
+	border-radius: 50%;
+	background-color: rgb(231, 176, 213 );
+	opacity: 85%;
+
+
+}
+
+.card{
+  display: flex;
+  border-radius: 1%;
+  border-color: purple;
+  opacity: 80%;
+  color: purple;
+  background-color: rgb(231, 176, 213 );
+  margin: 100px auto;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+
+.caja2{
+	padding: 10px;
+	margin: auto;
+}
+
+
+.t2{text-align: center;
+	color: pink;
+	margin: auto;
+	font-style:'Roboto'sans-serif;
+}
+
+
+.success {
+    border: 2px solid lime;
+    outline: none;
+}
+ 
+.error {
+    border: 2px solid red;
+    outline: none;
+}
